@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/css1.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main class="container">
+        <div class="form">
+            <label class="form-label" for="idade"> Idade</label>
+            <input type="number" class="form-controle" id="idade" placeholder="idade">
+
+            <label class="form-label" for="peso"> Peso</label>
+            <input type="number" class="form-controle" id="peso" placeholder="Kg">
+
+            <label class="form-label" for="altura"> Altura</label>
+            <input type="number" class="form-controle" id="altura" placeholder="Cm">
+
+            <button class="btn" onclick="calcularImc()">calcular</button>
+            <h1 id="resultado"></h1>
+            <table id="tabelaDeValores">
+                <thead>
+                    <tr>
+                        <th>Plano</th>
+                        <th>Operadora A</th>
+                        <th>Operadora B</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Basic</th>
+                        <td id="planoABasic"></td>
+                        <td id="planoBBasic"></td>
+                    </tr>
+                    <tr>
+                        <th>Standard</th>
+                        <td id="planoAStandard"></td>
+                        <td id="planoBStandard"></td>
+                    </tr>
+                    <tr>
+                        <th>Premium</th>
+                        <td id="planoAPremium"></td>
+                        <td id="planoBPremium"></td>
+                    </tr>
+                </tbody>
+                </table>
+        <script src="js/js1.js"> </script>
+
+    </main>
+</body>
+
+</html>
